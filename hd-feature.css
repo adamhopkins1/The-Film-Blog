@@ -21,16 +21,58 @@ body {
   top: 0rem;
 }
 
-@media (min-width: 768px) {
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  body {
+    display: block;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  body {
+    display: block;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  body {
+    display: block;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  body {
+    display: block;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  body {
+    display: block;
+  }
+}
+
+/* @media (min-width: 768px) {
   .bd-placeholder-img-lg {
     font-size: 3.5rem;
   }
-}
+} */
 
 .fw-normal {
   font-family: cresta, sans-serif;
   font-weight: 400;
   font-style: normal;
+}
+
+.title {
+  justify-content: center;
+  position: relative;
+  left: 24%;
+  bottom: 1em;
 }
 
 p {
@@ -59,20 +101,36 @@ p {
   fill: currentColor;
 }
 
-.marketing .col-lg-4 {
+.marketing .col-lg-5 {
   margin-bottom: 1.5rem;
   text-align: center;
   position: relative;
-  left: 27rem;
+  justify-content: center;
+  left: 0%;
 }
 
-.marketing .col-lg-4 p {
+.marketing .col-lg-5 p {
   margin-right: 0.75rem;
   margin-left: 0.75rem;
 }
 
 .featurette-divider {
   margin: 5rem 0;
+}
+
+.marketing .col-lg-6 {
+  margin: 1px;
+  margin-bottom: 55px;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+  left: 45%;
+  top: -1370px;
+}
+
+.marketing .col-lg-6 p {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
 }
 
 @media (min-width: 40em) {
