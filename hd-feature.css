@@ -21,75 +21,88 @@ body {
   top: 0rem;
 }
 
-@media (max-width: 500px) {
-  .marketing .col-lg-5 {
-    /* margin-bottom: 1.5rem; */
-    text-align: center;
-    position: relative;
-    justify-content: center;
-    left: 0%;
-    margin: -40px;
-    margin-bottom: 55px;
-  }
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
 
-  .marketing .col-lg-5 p {
-    margin-right: 0.75rem;
-    margin-left: 0.75rem;
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {
+    width: 8.33%;
   }
-
-  .featurette-divider {
-    margin: 5rem 0;
+  .col-s-2 {
+    width: 16.66%;
   }
-
-  .marketing .col-lg-6 {
-    margin: 0px;
-    margin-bottom: 17px;
-    text-align: center;
-    justify-content: center;
-    position: relative;
-    left: 45%;
-    top: -1370px;
+  .col-s-3 {
+    width: 25%;
   }
-
-  .marketing .col-lg-6 p {
-    margin-right: 0.75rem;
-    margin-left: 0.75rem;
+  .col-s-4 {
+    width: 33.33%;
+  }
+  .col-s-5 {
+    width: 41.66%;
+  }
+  .col-s-6 {
+    width: 50%;
+  }
+  .col-s-7 {
+    width: 58.33%;
+  }
+  .col-s-8 {
+    width: 66.66%;
+  }
+  .col-s-9 {
+    width: 75%;
+  }
+  .col-s-10 {
+    width: 83.33%;
+  }
+  .col-s-11 {
+    width: 91.66%;
+  }
+  .col-s-12 {
+    width: 100%;
   }
 }
 
-@media (min-width: 500px) {
-  .marketing .col-lg-5 {
-    /* margin-bottom: 1.5rem; */
-    text-align: center;
-    position: relative;
-    justify-content: center;
-    left: 0%;
-    margin: -40px;
-    margin-bottom: 55px;
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {
+    width: 8.33%;
   }
-
-  .marketing .col-lg-5 p {
-    margin-right: 0.75rem;
-    margin-left: 0.75rem;
+  .col-2 {
+    width: 16.66%;
   }
-
-  .featurette-divider {
-    margin: 5rem 0;
+  .col-3 {
+    width: 25%;
   }
-
-  .marketing .col-lg-6 {
-    margin: 0px;
-    margin-bottom: 17px;
-    text-align: center;
-    justify-content: center;
-    position: relative;
-    left: 45%;
-    top: -1370px;
+  .col-4 {
+    width: 33.33%;
   }
-
-  .marketing .col-lg-6 p {
-    margin-right: 0.75rem;
-    margin-left: 0.75rem;
+  .col-5 {
+    width: 41.66%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.33%;
+  }
+  .col-8 {
+    width: 66.66%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33%;
+  }
+  .col-11 {
+    width: 91.66%;
+  }
+  .col-12 {
+    width: 100%;
   }
 }
 
@@ -99,11 +112,17 @@ body {
   font-style: normal;
 }
 
+/* .title {
+  text-align: center;
+} */
+
 .title {
-  justify-content: center;
-  position: relative;
-  left: 24%;
-  bottom: 1em;
+  text-align: center;
+  font-family: "Zizou Slab Light";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Zizou Slab Light"),
+    url("zizou_Zizou SlabLight.woff") format("woff");
 }
 
 p {
@@ -132,22 +151,9 @@ p {
   fill: currentColor;
 }
 
-/* .marketing .col-lg-5 {
-  margin-bottom: 1.5rem;
-  text-align: center;
-  position: relative;
-  justify-content: center;
-  left: 0%;
-} */
-
 .marketing .col-lg-5 {
   /* margin-bottom: 1.5rem; */
   text-align: center;
-  position: relative;
-  justify-content: center;
-  left: 0%;
-  margin: -40px;
-  margin-bottom: 55px;
 }
 
 .marketing .col-lg-5 p {
@@ -160,13 +166,7 @@ p {
 }
 
 .marketing .col-lg-6 {
-  margin: 1px;
-  margin-bottom: 17px;
   text-align: center;
-  justify-content: center;
-  position: relative;
-  left: 45%;
-  top: -1370px;
 }
 
 .marketing .col-lg-6 p {
@@ -185,7 +185,7 @@ p {
   .featurette-divider {
     margin: 5rem 0;
     position: relative;
-    bottom: 117%;
+    bottom: 7%;
   }
 }
 
