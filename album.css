@@ -23,6 +23,11 @@ div.album.py-5.bg-light {
   padding-top: 3rem;
 }
 
+#py-lg-5 {
+  position: relative;
+  right: 250px;
+}
+
 .row.row-cols-1 .row-cols-sm-2 .row-cols-md-3 .g-3 {
   box-sizing: border-box;
   color: #212529;
@@ -64,7 +69,7 @@ rect {
   line-height: 1.5;
 }
 
-.col {
+/* .col {
   box-sizing: border-box;
   color: #212529;
   flex: 0 0 auto;
@@ -72,10 +77,18 @@ rect {
   font-weight: 400;
   line-height: 1.5;
   margin-top: 1rem;
-  max-width: 100%;
+  max-width: 50%;
+  margin-left: 1rem;
   padding-left: calc(1rem * 0.5);
   padding-right: calc(1rem * 0.5);
-  width: 100%;
+} */
+
+.col {
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  width: 50%;
 }
 
 .bd-placeholder-img .card-img-top-1 {
@@ -100,6 +113,7 @@ rect {
   user-select: none;
   position: relative;
   top: 0rem;
+  width: initial;
   image-rendering: auto;
   image-rendering: crisp-edges;
   image-rendering: pixelated;
@@ -171,3 +185,21 @@ small.text-muted {
   font-weight: 400;
   line-height: 1.5;
 }
+
+p#lead\ text-muted {
+  position: relative;
+  right: 60%;
+}
+
+div#col {
+  position: relative;
+  left: 19%;
+  width: 60%;
+}
+
+/* .col {
+  position: relative;
+  width: 50%;
+  height: 10%;
+  left: 25%;
+} */
